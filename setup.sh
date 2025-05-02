@@ -6,3 +6,9 @@ for i in curl fish; do
     exit 1
   fi
 done
+
+fish -c '
+if not functions -q fisher
+  curl -sSL https://git.io/fisher | source
+end
+'
