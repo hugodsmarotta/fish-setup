@@ -18,3 +18,10 @@ fisher install \
 '
 
 fish_config_dir="$(fish -c 'echo $__fish_config_dir')"
+
+tee "$fish_config_dir/config.fish" <<'EOF' >/dev/null
+if status is-interactive
+  bind \e\[3\;5~ kill-word
+  bind \b backward-kill-word
+end
+EOF
