@@ -16,3 +16,5 @@ fisher install \
   jorgebucaran/fisher \
   jorgebucaran/autopair.fish
 '
+
+fish_config_dir="$(fish -c 'echo $__fish_config_dir')"
