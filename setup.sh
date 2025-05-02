@@ -11,4 +11,8 @@ fish -c '
 if not functions -q fisher
   curl -sSL https://git.io/fisher | source
 end
+
+fisher install \
+  jorgebucaran/fisher \
+  jorgebucaran/autopair.fish
 '
