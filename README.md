@@ -15,3 +15,8 @@ terminal and run the following command:
 ```sh
 sh -c "$(curl -sSL https://dub.sh/fish-setup)"
 ```
+
+### 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md)
+file for details.
