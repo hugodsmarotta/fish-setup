@@ -23,5 +23,14 @@ tee "$fish_config_dir/config.fish" <<'EOF' >/dev/null
 if status is-interactive
   bind \e\[3\;5~ kill-word
   bind \b backward-kill-word
+
+  function mkcd
+    mkdir -p "$argv[1]"
+    cd "$argv[1]"
+  end
+
+  function mkcdtmp
+    cd "$(mktemp -d)"
+  end
 end
 EOF
