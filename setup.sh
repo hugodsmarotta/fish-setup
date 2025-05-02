@@ -32,5 +32,9 @@ if status is-interactive
   function mkcdtmp
     cd "$(mktemp -d)"
   end
+
+  if type -q bat
+    abbr cat 'bat -P'
+  end
 end
 EOF
