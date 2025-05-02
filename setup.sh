@@ -36,5 +36,14 @@ if status is-interactive
   if type -q bat
     abbr cat 'bat -P'
   end
+
+  if type -q eza
+    abbr ls 'eza --group-directories-first'
+    abbr lsa 'eza -a --group-directories-first'
+    abbr ll 'eza -lh --group-directories-first'
+    abbr lla 'eza -lha --group-directories-first'
+    abbr lt 'eza -T --group-directories-first'
+    abbr lta 'eza -Ta --group-directories-first'
+  end
 end
 EOF
