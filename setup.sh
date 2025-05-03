@@ -14,7 +14,10 @@ end
 
 fisher install \
   jorgebucaran/fisher \
-  jorgebucaran/autopair.fish
+  jorgebucaran/autopair.fish \
+  nickeb96/puffer-fish \
+  jethrokuan/fzf \
+  jethrokuan/z
 '
 
 fish_config_dir="$(fish -c 'echo $__fish_config_dir')"
