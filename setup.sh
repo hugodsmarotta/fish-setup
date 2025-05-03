@@ -50,3 +50,5 @@ if status is-interactive
   end
 end
 EOF
+
+chsh -s "$(which fish)"
